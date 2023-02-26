@@ -24,7 +24,9 @@ const TodoList = (props) => {
             primary={props.title}
             secondary={props.isCompleted ? 'Completed' : 'pending'}
           />
-          <ListItem
+          <ListItem sx={{
+            width: '50px'
+          }}
             secondaryAction={
               props.isCompleted === false ? <IconButton edge="end" aria-label="Complete" onClick={() => props.complete(id)} > <DoneIcon size="small" /></IconButton> : <></>
             }

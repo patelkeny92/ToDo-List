@@ -68,16 +68,20 @@ function App() {
         <div className='container'>
           <ThemeProvider theme={darkTheme}>
             <CssBaseline />
-            <Box >
+            <Box sx={{
+              width: '90%'
+            }}>
               <Box
                 component="form"
                 sx={{
-                  '& > :not(style)': { m: 1, width: '25ch' },
+                  '& > :not(style)': { m: 1, width: '100%' },
+                  display: 'flex',
+                  justifyContent: 'space-between'
                 }}
                 noValidate
                 autoComplete="off"
               >
-                <TextField id="standard-basic" label="Enter a new task" variant="standard" onChange={(data) => setNewTitle(data.target.value)} className="textInput" />
+                <TextField id="standard-basic" label="Enter a new task" variant="standard" onChange={(data) => setNewTitle(data.target.value)} className="textInput" fullWidth="true"/>
                 <Button variant="contained" size='small' startIcon={<AddTaskIcon />} onClick={addHandler} className="btn">
                   Add
                 </Button>

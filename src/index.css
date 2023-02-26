@@ -42,6 +42,13 @@ code {
   border-radius: 10px;
 }
 
+.btn {
+  margin-top: 23px !important;
+  width: 50% !important;
+  height: min-content !important;
+  padding: 5px !important;
+}
+
 @media screen and (max-width: 480px) {
   body {
     background-image: none;
@@ -51,10 +58,11 @@ code {
     margin-top: 0;
   }
   .container {
-    width: 95% !important;
-    height: 97%;
+    width: 100% !important;
+    height: 100% !important;
     border-radius: 0;
     box-shadow: none;
+    margin: 0px 0px;
   }
 }
 
